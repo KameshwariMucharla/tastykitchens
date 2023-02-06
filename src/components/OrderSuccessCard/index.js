@@ -17,12 +17,7 @@ const OrderSuccessCard = () => (
             Your payment is successfully completed.
           </p>
           <Link to="/">
-            <button
-              type="button"
-              className="go-to-home-page-btn"
-              onClick={onVisitHomePage}
-            >
-              {' '}
+            <button type="button" className="go-to-home-page-btn">
               Go To Home Page
             </button>
           </Link>
