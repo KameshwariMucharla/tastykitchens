@@ -84,12 +84,11 @@ class App extends Component {
   }
 
   placeOrderClicked = () => {
-    this.setState({showCard: true, cartList: []})
+    this.setState({cartList: []})
   }
 
   render() {
     const {cartList, showCard} = this.state
-    console.log(cartList)
 
     localStorage.setItem('cartData', JSON.stringify(cartList))
 
