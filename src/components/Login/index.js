@@ -97,7 +97,7 @@ class Login extends Component {
             {' '}
             Login
           </button>
-          {isError && <p className="error-msg">*{errorMsg}</p>}
+          {isError && <p className="error-msg">{errorMsg}</p>}
         </form>
 
         <img
