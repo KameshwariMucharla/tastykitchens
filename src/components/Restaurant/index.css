@@ -1,0 +1,141 @@
+.description {
+  font-family: 'DM sans';
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+.popular-heading {
+  font-family: 'DM sans';
+  font-size: 27px;
+  color: #183b56;
+  font-weight: 700;
+}
+.separator {
+  border: 1px solid #cbd2d9;
+}
+.restaurant-details {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.restaurant-top-section {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 576px) {
+  .restaurant-top-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.sort-heading {
+  color: #475569;
+  font-family: 'DM sans';
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 9px;
+}
+.sorting-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.sort-icon {
+  font-size: 22px;
+  color: #475569;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.options {
+  width: 250px;
+  height: 120px;
+  padding: 20px;
+}
+
+.select {
+  -moz-appearance: none;
+  color: #475569;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'DM sans';
+  background-color: transparent;
+  border-width: 0px;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .select {
+    font-size: 14px;
+  }
+  .sort-heading {
+    font-size: 14px;
+  }
+  .sort-icon {
+    margin-top: 13px;
+  }
+}
+
+.restaurant-list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+.pagination-btn {
+  background-color: transparent;
+  border-width: 0px;
+  cursor: pointer;
+}
+.arrow-icon {
+  color: #334155;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 6px;
+}
+.page-no {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Bree Serif';
+  color: #334155;
+  text-align: center;
+}
+.search-container {
+  display: flex;
+}
+.search-input {
+  background-color: #e5e5e5;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-width: 0px;
+  padding: 5px;
+  width: 30%;
+  height: 35px;
+  outline: none;
+  cursor: scroll;
+}
+@media screen and (max-width: 576px) {
+  .search-input {
+    width: 80%;
+  }
+}
+.search-icon {
+  background-color: #e5e5e5;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 6px;
+  font-size: 15px;
+  height: 35px;
+  width: 30px;
+  color: #334155;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}

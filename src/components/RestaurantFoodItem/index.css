@@ -1,0 +1,127 @@
+.item-img {
+  height: 130px;
+  width: 180px;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.dish-details {
+  list-style-type: none;
+  display: flex;
+  margin-right: 50px;
+  width: 40%;
+}
+@media screen and (max-width: 576px) {
+  .item-img {
+    height: 100px;
+    min-width: 130px;
+    max-width: 140px;
+  }
+  .dish-details {
+    width: 90%;
+  }
+}
+.dish-name {
+  color: #334155;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+.rupee-icon1 {
+  color: #334155;
+  font-size: 16px;
+  margin-right: 4px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.dish-cost {
+  color: #334155;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-family: 'DM Sans';
+  font-weight: 500;
+}
+@media screen and (max-width: 576px) {
+  .dish-name {
+    font-size: 12px;
+  }
+  .rupee-icon1 {
+    font-size: 12px;
+  }
+  .dish-cost {
+    font-size: 12px;
+  }
+}
+.rating-star1 {
+  font-size: 16px;
+  margin-top: 3px;
+  margin-right: 4px;
+  margin-bottom: 0px;
+  color: #ffcc00;
+}
+.dish-rating {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.add-btn {
+  background-color: transparent;
+  border: 2px solid #ffa412;
+  border-radius: 6px;
+  color: #ffa412;
+  margin-top: 5px;
+  padding: 4px 8px 4px 8px;
+}
+@media screen and (max-width: 576px) {
+  .rating-star {
+    font-size: 12px;
+  }
+  .dish-rating {
+    font-size: 12px;
+  }
+  .add-btn {
+    font-size: 12px;
+    border: 1px solid #ffa412;
+    padding: 2px 4px 2px 4px;
+  }
+}
+
+.counter-container {
+  margin-top: 8px;
+  display: flex;
+}
+.minus-btn {
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  color: #475569;
+}
+.plus-btn {
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  color: #475569;
+}
+.quantity {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin-top: 0px;
+}

@@ -1,0 +1,52 @@
+.order-placed-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+  margin-top: 20px;
+}
+.check-icon {
+  color: #22c55e;
+  width: 35px;
+  height: 35px;
+}
+.payment-heading {
+  color: #1e293b;
+  font-size: 20px;
+  font-family: 'DM Sans';
+  font-weight: 500;
+}
+@media screen and (min-width: 576px) {
+  .check-icon {
+    height: 45px;
+    width: 45px;
+  }
+  .payment-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.greetings {
+  color: #64748b;
+  font-size: 14px;
+  font-family: 'DM Sans';
+  font-weight: 400;
+}
+.go-to-home-page-btn {
+  background-color: #f7931e;
+  color: #ffffff;
+  border-radius: 6px;
+  border-width: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 576px) {
+  .greetings {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,21 @@
+.image {
+  height: 180px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.slide-container {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 576px) {
+  .slide-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .image {
+    height: auto;
+    width: 90%;
+  }
+}

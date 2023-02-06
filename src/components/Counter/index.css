@@ -1,0 +1,32 @@
+.counter-container {
+  margin-top: 8px;
+  display: flex;
+}
+.minus-btn {
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  color: #475569;
+}
+.plus-btn {
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  color: #475569;
+}
+.quantity {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin-top: 0px;
+}

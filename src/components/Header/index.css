@@ -1,0 +1,130 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hotel-name1 {
+  color: #f7931e;
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'DM sans';
+}
+.website-logo1 {
+  height: 45px;
+  width: 45px;
+  margin-top: 10px;
+  margin-right: 6px;
+}
+@media screen and (max-width: 576px) {
+  .website-logo1 {
+    height: 35px;
+    width: 35px;
+  }
+  .hotel-name1 {
+    font-size: 20px;
+  }
+  .nav-container {
+    width: 100%;
+  }
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8fafc;
+}
+.website-logo-container {
+  display: flex;
+  margin-top: 15px;
+}
+.nav-desktop-container {
+  display: flex;
+  margin-top: 15px;
+}
+@media screen and (max-width: 576px) {
+  .nav-desktop-container {
+    display: none;
+  }
+}
+.list-container {
+  display: flex;
+}
+.list-item {
+  list-style-type: none;
+  color: #334155;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'DM sans';
+  text-decoration: none;
+  margin-right: 10px;
+}
+@media screen and (max-width: 576px) {
+  .list-item {
+    font-size: 15px;
+    margin-top: 4px;
+  }
+}
+.logout-btn {
+  background-color: #f7931e;
+  color: #ffffff;
+  width: 90px;
+  height: 38px;
+  border-radius: 6px;
+  border-width: 0px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .logout-btn {
+    margin-top: 0px;
+    height: 28px;
+    width: 80px;
+    font-size: 12px;
+  }
+}
+.nav-mobile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.open-icon {
+  border-width: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (min-width: 576px) {
+  .nav-mobile-container {
+    display: none;
+  }
+}
+.mobile-view-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  .mobile-view-container {
+    display: none;
+  }
+}
+
+.nav-mobile-menu-container {
+  display: flex;
+}
+.close-btn {
+  border-width: 0px;
+  background-color: transparent;
+}
+.close-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.active-class {
+  color: #f7931e;
+}

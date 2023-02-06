@@ -1,0 +1,143 @@
+.restaurant-top-section1 {
+  background-image: url('https://res.cloudinary.com/dfgc7y56h/image/upload/v1674724528/Frame_279_igfnii.png');
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 240px;
+  margin-bottom: 10px;
+}
+
+.restaurant-image {
+  height: 180px;
+  width: 260px;
+  border-radius: 8px;
+}
+@media screen and (max-width: 576px) {
+  .restaurant-top-section1 {
+    padding-top: 0px;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+  .restaurant-image {
+    height: 200px;
+    width: 200px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 90px;
+    margin-left: -34px;
+  }
+}
+.details-container {
+  align-self: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 24px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #ffffff;
+}
+.cuisine1 {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.location {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin-top: 0px;
+}
+@media screen and (max-width: 576px) {
+  .name {
+    font-size: 14px;
+  }
+  .cuisine1 {
+    font-size: 12px;
+  }
+  .location {
+    font-size: 12px;
+  }
+}
+.rating-details-container {
+  display: flex;
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .rating-details-container {
+    width: 90%;
+  }
+}
+.star-rating-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+}
+.star-container {
+  display: flex;
+}
+.star-icon {
+  color: #ffffff;
+  margin-top: 15px;
+  margin-right: 6px;
+  margin-bottom: 0px;
+}
+.stars {
+  font-size: 15px;
+  font-family: 'DM Sans';
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.ratings {
+  margin-top: 4px;
+  color: #e2e8f0;
+  font-size: 12px;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  line-height: 16px;
+}
+.cost-container {
+  display: flex;
+}
+.rupee-icon {
+  color: #ffffff;
+  margin-top: 15px;
+  margin-right: 6px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.rupee {
+  font-size: 15px;
+  font-family: 'DM Sans';
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 576px) {
+  .star-icon {
+    font-size: 12px;
+    margin-top: 13px;
+  }
+  .stars {
+    font-size: 12px;
+  }
+  .rupee-icon {
+    font-size: 12px;
+    margin-top: 13px;
+  }
+  .rupee {
+    font-size: 12px;
+  }
+}
