@@ -23,9 +23,9 @@ const CartItem = props => (
       }
 
       return (
-        <div className="cart-list-container1" testid="cartItem">
+        <li className="cart-list-container1" testid="cartItem">
           <div className="cart-container">
-            <img src={imageUrl} alt="name" className="cart-img" />
+            <img src={imageUrl} alt={name} className="cart-img" />
             <h1 className="cart-dish-name">{name}</h1>
           </div>
           <div className="quantity-price-container">
@@ -58,7 +58,7 @@ const CartItem = props => (
               </p>
             </div>
           </div>
-        </div>
+        </li>
       )
     }}
   </CartContext.Consumer>
