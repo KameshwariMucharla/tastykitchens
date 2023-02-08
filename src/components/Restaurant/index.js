@@ -105,48 +105,44 @@ class Restaurant extends Component {
         {isLoading ? (
           this.renderLoadingView()
         ) : (
-          <div className="restaurant-details">
-            <h1 className="popular-heading">Popular Restaurants</h1>
+          <>
+            <div className="restaurant-details">
+              <h1 className="popular-heading">Popular Restaurants</h1>
+              <div className="restaurant-top-section">
+                <p className="description">
+                  Select Your favourite restaurant special dish and make your
+                  day happy...
+                </p>
 
-            <div className="restaurant-top-section">
-              <p className="description">
-                Select Your favourite restaurant special dish and make your day
-                happy...
-              </p>
-
-              <div className="sorting-container">
-                <MdSort className="sort-icon" />
-                <p className="sort-heading">Sort by </p>
-                <select
-                  className="select"
-                  onChange={this.orderChanged}
-                  value={sortingOrder}
-                >
-                  {sortByOptions.map(eachOption => (
-                    <option
-                      className="options"
-                      key={eachOption.id}
-                      value={eachOption.value}
-                    >
-                      {eachOption.displayText}
-                    </option>
-                  ))}
-                </select>
+                <div className="sorting-container">
+                  <MdSort className="sort-icon" />
+                  <p className="sort-heading">Sort by </p>
+                  <select
+                    className="select"
+                    onChange={this.orderChanged}
+                    value={sortingOrder}
+                  >
+                    {sortByOptions.map(eachOption => (
+                      <option
+                        className="options"
+                        key={eachOption.id}
+                        value={eachOption.value}
+                      >
+                        {eachOption.displayText}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
-            </div>
-            <div className="search-container">
-              <input
-                type="search"
-                className="search-input"
-                onChange={this.searchInputValueChanged}
-              />
-              <BsSearch className="search-icon" />
-            </div>
-            <hr className="separator" />
-
-            {isLoading ? (
-              this.renderLoadingView()
-            ) : (
+              <div className="search-container">
+                <input
+                  type="search"
+                  className="search-input"
+                  onChange={this.searchInputValueChanged}
+                />
+                <BsSearch className="search-icon" />
+              </div>
+              <hr className="separator" />
               <div className="restaurant-list-container">
                 {restaurantDetails.map(eachRestaurant => (
                   <RestaurantItem
@@ -155,29 +151,30 @@ class Restaurant extends Component {
                   />
                 ))}
               </div>
-            )}
-            <div className="pagination-container">
-              <button
-                type="button"
-                className="pagination-btn"
-                onClick={this.onDecreasePageNo}
-                testid="pagination-left-button"
-              >
-                <AiOutlineLeftSquare className="arrow-icon" />
-              </button>
-              <p className="page-no" testid="active-page-number">
-                {activePage} of 4
-              </p>
-              <button
-                type="button"
-                className="pagination-btn"
-                testid="pagination-right-button"
-                onClick={this.onIncreasePageNo}
-              >
-                <AiOutlineRightSquare className="arrow-icon" />
-              </button>
+              )}
+              <div className="pagination-container">
+                <button
+                  type="button"
+                  className="pagination-btn"
+                  onClick={this.onDecreasePageNo}
+                  testid="pagination-left-button"
+                >
+                  <AiOutlineLeftSquare className="arrow-icon" />
+                </button>
+                <p className="page-no" testid="active-page-number">
+                  {activePage} of 4
+                </p>
+                <button
+                  type="button"
+                  className="pagination-btn"
+                  testid="pagination-right-button"
+                  onClick={this.onIncreasePageNo}
+                >
+                  <AiOutlineRightSquare className="arrow-icon" />
+                </button>
+              </div>
             </div>
-          </div>
+          </>
         )}
       </div>
     )
