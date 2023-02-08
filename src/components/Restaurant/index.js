@@ -162,7 +162,7 @@ class Restaurant extends Component {
                   <AiOutlineLeftSquare className="arrow-icon" />
                 </button>
                 <p className="page-no" testid="active-page-number">
-                  {activePage} of 4
+                  {activePage}
                 </p>
                 <button
                   type="button"

@@ -33,10 +33,7 @@ class CarouselItem extends Component {
   }
 
   renderLoadingView = () => (
-    <div
-      data-testid="restaurants-offers-loader"
-      className="loading-view loader"
-    >
+    <div testid="restaurants-offers-loader" className="loading-view loader">
       <Loader color="#f7931e" height={60} type="TailSpin" width={60} />
     </div>
   )
