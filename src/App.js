@@ -12,12 +12,12 @@ import OrderSuccessCard from './components/OrderSuccessCard'
 import CartContext from './context/CartContext'
 
 const getItemsInCartList = () => {
-  const cartListItems = JSON.parse(localStorage.getItem('cartData'))
+  const cartListItems = localStorage.getItem('cartData')
 
-  if (cartListItems.length === 0) {
+  if (cartListItems === null) {
     return []
   }
-  return cartListItems
+  return JSON.parse(cartListItems)
 }
 
 class App extends Component {
